@@ -8,12 +8,12 @@ app.use(bodyParser.json());
 app.use(cors());
 
 
-app.get("/", (req, res) => {
+app.get("https://bfhl-delta.vercel.app/", (req, res) => {
   res.send(" BFHL API is running! Use POST /bfhl");
 });
 
 
-app.post("/bfhl", (req, res) => {
+app.post("https://bfhl-delta.vercel.app/bfhl", (req, res) => {
   try {
     const inputArray = req.body.data;
 
